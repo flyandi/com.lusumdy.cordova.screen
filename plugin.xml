@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.lusumdy.cordova.screen"
+      version="0.1.0">
+    <name>LusumdyScreen</name>
+
+    <js-module src="www/lusumdyscreen.js" name="LusumdyScreen">
+        <clobbers target="LusumdyScreen" />
+    </js-module>
+    
+    <info>
+        This plugin offers varies screen functions like Brightness and Screen Keep On. 
+        Support for Androida and iOS.
+	</info>
+
+    <!-- (android) -->
+    <platfrm name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LusumdyScreen">
+                <param name="android-package" value="com.lusumdy.cordova.screen"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+        </config-file>
+	   <source-file src="src/android/LusumdyScreen.java" target-dir="src/com/lusumdy/cordova/screen" />
+    </platform>
+     
+     <!-- (ios) -->
+    <platform name="ios">    
+        <config-file target="config.xml" parent="/*">
+            <feature name="LusumdyScreen">
+                <param name="ios-package" value="LusumdyScreen" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/LusumdyScreen.h" />
+        <source-file src="src/ios/LusumdyScreen.m" />
+        <framework src="UIKit.framework" weak="true" />
+    </platform>
+          
+</plugin>

@@ -1,0 +1,14 @@
+{
+    "version": "1.0.0",
+    "name": "com.lusumdy.cordova.screen",
+    "cordova_name": "LusumdyScreen",
+    "description": "Screen Functions for Cordova 3.x",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "screen",
+        "keep on",
+        "brightness"
+    ],
+    "engines": []
+}
