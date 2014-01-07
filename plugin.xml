@@ -26,18 +26,5 @@
         </config-file>
 	   <source-file src="src/android/LusumdyScreen.java" target-dir="src/com/lusumdy/cordova/screen" />
     </platform>
-     
-     <!-- (ios) -->
-    <platform name="ios">    
-        <config-file target="config.xml" parent="/*">
-            <feature name="LusumdyScreen">
-                <param name="ios-package" value="LusumdyScreen" />
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/LusumdyScreen.h" />
-        <source-file src="src/ios/LusumdyScreen.m" />
-        <framework src="UIKit.framework" weak="true" />
-    </platform>
           
 </plugin>

@@ -1,4 +1,4 @@
-package com.lusumdy.cordova.LusumdyScreen;
+package com.lusumdy.cordova.screen;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -56,6 +56,9 @@ public class LusumdyScreen extends CordovaPlugin {
 
 		// set flags
 		activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+		// return
+		return true;
 	},
 
 }
